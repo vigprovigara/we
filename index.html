@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIGPRO</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="halamanutama.mp3" type="audio/mp3">
+    </audio>
+    <main>
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">VIGARA PRODUCTION</a></h2>
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link" id="halamanutamaBtn">Halaman Utama</a></li>
+            <li><a href="#" class="nav_link" id="pendaftaranBtn">Pendaftaran</a></li>
+            <li><a href="#" class="nav_link" id="kreasiBtn">Kreasi</a></li>
+            <li><a href="#" class="nav_link" id="informasiBtn">Informasi</a></li>
+            <li><a href="#" class="nav_link" id="aplikasiBtn">Aplikasi</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="barsicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Kebebasan Berkreasi <br />Talenta Berkembang Mandiri</h2>
+            <p>"Vigpro Di Sini Kreativitas Tanpa Batas! Bebaskan imajinasimu, ciptakan karya tanpa henti, dan wujudkan setiap harapan. Dengan semangat inovasi dan kebebasan berkreasi, Vigpro mendorongmu untuk melampaui batas dan mencapai impian terbesar. Bersama Vigpro, kita merayakan kebebasan berkreasi, menghadirkan solusi inspiratif, dan membangun masa depan yang lebih cerah untuk semua."</p>
+            <div class="buttons">
+              <button class="btn" id="signinBtn">Sign In</button>
+              <button class="btn" id="loginBtn">Log In</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="Gambar Logo Remove Bg.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/" alt="" class="curveImg" />
+      </section>
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+      const loginBtn = document.getElementById("loginBtn");
+      const signinBtn = document.getElementById("signinBtn");
+      const halamanutamaBtn = document.getElementById("halamanutamaBtn");
+      const kreasiBtn = document.getElementById("kreasiBtn");
+      const pendaftaranBtn = document.getElementById("pendaftaranBtn");
+      const informasiBtn = document.getElementById("informasiBtn");
+      const aplikasiBtn = document.getElementById("aplikasiBtn");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+
+      loginBtn.addEventListener("click", () => {
+        window.location.href = 'lanjutan/login.html'; // Ganti 'login.html' dengan nama file halaman login Anda
+      });
+
+      signinBtn.addEventListener("click", () => {
+        window.location.href = 'lanjutan/signin.html'; // Ganti 'signin.html' dengan nama file halaman sign in Anda
+      });
+
+      halamanutamaBtn.addEventListener("click", () => {
+        window.location.href = 'halaman_utama.html'; // Ganti 'halaman_utama.html' dengan nama file halaman Halaman Utama Anda
+      });
+
+      kreasiBtn.addEventListener("click", () => {
+        window.location.href = 'navigasi/kreasi.html'; // Ganti 'kreasi.html' dengan nama file Kreasi Anda
+      });
+
+      pendaftaranBtn.addEventListener("click", () => {
+        window.location.href = 'navigasi/daftar.html'; // Ganti 'daftar.html' dengan nama file pendaftaran Anda
+      });
+
+      informasiBtn.addEventListener("click", () => {
+        window.location.href = 'navigasi/informasi.html'; // Ganti 'infromasi.html' dengan nama file infromasi Anda
+      });
+
+      aplikasiBtn.addEventListener("click", () => {
+        window.location.href = 'navigasi/aplikasi.html'; // Ganti 'aplikasi.html' dengan nama file aplikasi Anda
+      });
+
+    </script>
+  </body>
+</html>

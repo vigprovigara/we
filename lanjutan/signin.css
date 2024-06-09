@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#form-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: transform 0.3s ease;
+}
+
+#form-container:hover {
+  transform: translateY(-5px);
+}
+
+#form-container h2 {
+  text-align: center;
+  color: #1E90FF;
+  margin-bottom: 20px;
+}
+
+/* Input Field Style */
+#form-container label {
+  color: #555;
+  font-size: 14px;
+}
+
+#form-container input[type="text"], 
+#form-container input[type="date"], 
+#form-container input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+#form-container input[type="text"]:focus,
+#form-container input[type="date"]:focus,
+#form-container input[type="tel"]:focus {
+  border-color: #1E90FF;
+}
+
+/* Submit Button Style */
+#form-container input[type="submit"] {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+#form-container input[type="submit"]:hover {
+  background-color: #004B8D;
+}
+
+/* Footer Style */
+#footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #888;
+}
